@@ -8,4 +8,6 @@ $> git clone git@github.com:koolkt/tictactoe_ruby.git; cd tictactoe_ruby; ruby b
 
 Todo:
 - simplify implementation with negamax
-- optimize with alpha beta prunning 
+- optimize with alpha beta prunning
+- write some actual tests
+- clean minimax implementation 
