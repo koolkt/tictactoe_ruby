@@ -13,7 +13,7 @@ class Logic
       return node[1][1] unless node[1][1] == "_"
     end
     return "-" unless node.join.split('').include?("_")
-    return false
+    return "continue"
   end
 
   def is_move_legal(board, move)

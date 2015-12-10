@@ -1,3 +1,5 @@
+require_relative 'Actor.rb'
+
 class Robot < Actor
   def initialize(name,logic)
     super(name)
@@ -9,6 +11,7 @@ class Robot < Actor
   attr_reader :name,:symbol,:message
 
   def get_move(node)
+    puts @message
     posible_values = []
     pm = posible_moves(node,'X')
     for move,posible_node in pm
@@ -52,10 +55,10 @@ class Robot < Actor
 
   def minimax(node, depth, is_maximazing_player)
     s = is_maximazing_player ? 'X': 'O'
-    it_is = @logic.is_gameover(node)
-    if it_is
-      return 0 unless it_is != '-'
-      return it_is == 'X' ? 1 : -1
+    state = @logic.is_gameover(node)
+    if state != 'continue'
+      return 0 unless state != '-'
+      return state == 'X' ? 1 : -1
     end
     if is_maximazing_player
       best_value = -100
