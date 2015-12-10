@@ -1,5 +1,5 @@
-# tictactoe_ruby
-Command line tic-tac-toe in ruby with an AI using minimax.
+# Tictactoe_ruby
+Command line tic-tac-toe in ruby with an AI using <a href="https://en.wikipedia.org/wiki/Minimax">minimax</a> Algorithm.
 
 Try it!
 ```
