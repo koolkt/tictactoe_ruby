@@ -5,3 +5,7 @@ Try it!
 ```
 $> git clone git@github.com:koolkt/tictactoe_ruby.git; cd tictactoe_ruby; ruby bin/tictactoe.rb
 ```
+
+Todo:
+- simplify implementation with negamax
+- optimize with alpha beta prunning 
